@@ -91,7 +91,7 @@ const CallQa = () => (
 const Vantage = () => (
   <Frame label="compass · business control">
     <div className="grid grid-cols-2 gap-px overflow-hidden rounded-lg bg-white/10">
-      {[["€33.2M", "Season Revenue", "text-success-med"], ["37.3%", "Gross Margin", "text-brand-lt"], ["−26.5%", "Driver consol.", "text-warning"], ["€3.2M", "Growth levers", "text-violet"]].map(([v, l, c]) => (
+      {[["€25M", "Season revenue", "text-success-med"], ["36%", "Gross margin", "text-brand-lt"], ["−24%", "Driver consol.", "text-warning"], ["€3M", "Growth levers", "text-violet"]].map(([v, l, c]) => (
         <div key={l} className="bg-ink/60 px-3 py-2.5">
           <div className={`display text-base font-semibold ${c}`}>{v}</div>
           <div className="text-[9px] text-white/45">{l}</div>
@@ -99,7 +99,7 @@ const Vantage = () => (
       ))}
     </div>
     <div className="mt-3 space-y-1">
-      {[["Premium", 48], ["Premium minivan", 45], ["Standard XL", 43]].map(([l, n]) => (
+      {[["Premium", 47], ["Premium minivan", 44], ["Standard XL", 42]].map(([l, n]) => (
         <div key={l} className="flex items-center gap-2">
           <span className="w-24 text-[9px] text-white/55">{l}</span>
           <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-white/10">
@@ -109,6 +109,7 @@ const Vantage = () => (
         </div>
       ))}
     </div>
+    <div className="mt-2 font-mono text-[8px] uppercase tracking-[0.12em] text-white/30">Illustrative data</div>
   </Frame>
 )
 
