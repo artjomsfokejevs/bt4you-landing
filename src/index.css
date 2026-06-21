@@ -1,0 +1,218 @@
+@import "tailwindcss";
+
+/* ============================================================
+   BT4YOU Brand Book v2.5.0 — premium tokens edition
+   Distilled from BT4YOU Executive Bot.
+   Three-stop diagonal gradients · tinted shadows ·
+   focus-glow halos · glassmorphism.
+   ============================================================ */
+@theme {
+  /* — PRIMARY scale (exact brand-book hex) — */
+  --color-deep-blue: #1e3a8a;
+  --color-indigo: #4f46e5;
+  --color-brand-dk: #0369a1;
+  --color-brand-lt: #0ea5e9;
+  --color-ink: #0f172a;
+  --color-ink-lt: #1e293b;
+  --color-muted: #64748b;
+  --color-muted-lt: #94a3b8;
+  --color-muted-dk: #475569;
+  --color-border: #e2e8f0;
+  --color-border-lt: #cbd5e1;
+  --color-soft: #f8fafc;
+  --color-soft-lt: #f1f5f9;
+  --color-card: #ffffff;
+
+  /* — VIOLET (cta / brand purple) — */
+  --color-violet: #8b5cf6;
+  --color-violet-dk: #7c3aed;
+  --color-violet-deep: #6d28d9;
+
+  /* — SEMANTIC — */
+  --color-success: #059669;
+  --color-success-med: #10b981;
+  --color-success-lt: #ecfdf5;
+  --color-warning: #f59e0b;
+  --color-warning-dk: #d97706;
+  --color-warning-bg: #fffbeb;
+  --color-danger: #dc2626;
+  --color-danger-dk: #b91c1c;
+  --color-danger-bg: #fef2f2;
+  --color-info: #3b82f6;
+  --color-info-lt: #eff6ff;
+  --color-amber-lt: #fef3c7;
+  --color-amber-dk: #92400e;
+  --color-green-lt: #dcfce7;
+  --color-red-lt: #fee2e2;
+
+  /* — Type — */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Source Serif 4", ui-serif, Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --radius-card: 16px;
+  --radius-panel: 22px;
+}
+
+@layer base {
+  :root {
+    /* — Signature gradients (brand-book angles) — */
+    --gradient-hero: linear-gradient(135deg, #0b1228 0%, #1e3a8a 55%, #2f6df6 100%);
+    --gradient-brand: linear-gradient(90deg, #5468ef 0%, #8b5cf6 100%);
+    --gradient-cta: linear-gradient(135deg, #6d28d9 0%, #9333ea 100%);
+    --gradient-cta-lavender: linear-gradient(135deg, #c7d2fe 0%, #ddd6fe 100%);
+    --gradient-card-blue: linear-gradient(160deg, #eff4ff 0%, #dde6fb 100%);
+    --gradient-card-success: linear-gradient(160deg, #ecfdf5 0%, #d1fae5 100%);
+    --gradient-stripe: linear-gradient(90deg, #4f46e5 0%, #8b5cf6 100%);
+
+    /* — Tinted shadows — */
+    --shadow-soft: 0 1px 2px rgba(15, 23, 42, 0.04), 0 10px 30px rgba(30, 58, 138, 0.07);
+    --shadow-lift: 0 4px 14px rgba(15, 23, 42, 0.06), 0 30px 60px rgba(79, 70, 229, 0.16);
+    --glow-focus: 0 0 0 3px rgba(14, 165, 233, 0.30);
+    --glow-cta: 0 10px 30px rgba(109, 40, 217, 0.35);
+  }
+
+  * { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply font-sans text-ink antialiased;
+    background: #ffffff;
+  }
+  ::selection { background: rgba(139, 92, 246, 0.22); }
+}
+
+@layer components {
+  /* — Gradient fills — */
+  .gradient-hero { background: var(--gradient-hero); }
+  .gradient-brand { background: var(--gradient-brand); }
+  .gradient-cta { background: var(--gradient-cta); }
+  .gradient-cta-lavender { background: var(--gradient-cta-lavender); }
+  .gradient-card-blue { background: var(--gradient-card-blue); }
+  .gradient-card-success { background: var(--gradient-card-success); }
+
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-lift { box-shadow: var(--shadow-lift); }
+
+  /* — Display heading (serif, deep blue, like the brand book) — */
+  .display {
+    @apply font-serif tracking-[-0.01em];
+  }
+
+  /* — Eyebrow / mono label — */
+  .eyebrow {
+    @apply inline-flex items-center gap-2 font-mono text-[11px] font-medium uppercase tracking-[0.18em] text-indigo;
+  }
+
+  /* — Pills / tags — */
+  .tag {
+    @apply inline-flex items-center rounded-full font-mono text-[10px] font-semibold uppercase tracking-[0.12em] px-2.5 py-1;
+  }
+
+  /* — Elevated card (tinted bg + matching colored shadow + top stripe) — */
+  .card-elevated {
+    @apply relative overflow-hidden rounded-2xl p-6 bg-white;
+    box-shadow: var(--shadow-soft);
+    transition: transform .28s cubic-bezier(.2,.7,.2,1), box-shadow .28s ease;
+  }
+  .card-elevated::before {
+    content: "";
+    position: absolute; inset: 0 0 auto 0; height: 3px;
+    background: var(--gradient-stripe);
+  }
+  .card-elevated:hover { transform: translateY(-4px); }
+
+  /* tint + colored-shadow variants — bg, shadow and stripe echo one token */
+  .v-brand   { background: var(--gradient-card-blue); }
+  .v-brand:hover   { box-shadow: 0 26px 50px rgba(79,70,229,.18); }
+  .v-violet  { background: linear-gradient(160deg,#f5f3ff 0%, #ede9fe 100%); }
+  .v-violet::before  { background: linear-gradient(90deg,#7c3aed,#a855f7); }
+  .v-violet:hover  { box-shadow: 0 26px 50px rgba(124,58,237,.18); }
+  .v-success { background: var(--gradient-card-success); }
+  .v-success::before { background: linear-gradient(90deg,#059669,#10b981); }
+  .v-success:hover { box-shadow: 0 26px 50px rgba(5,150,105,.16); }
+  .v-info    { background: linear-gradient(160deg,#eff6ff 0%, #dbeafe 100%); }
+  .v-info::before    { background: linear-gradient(90deg,#0369a1,#0ea5e9); }
+  .v-info:hover    { box-shadow: 0 26px 50px rgba(14,165,233,.18); }
+  .v-warning { background: linear-gradient(160deg,#fffbeb 0%, #fef3c7 100%); }
+  .v-warning::before { background: linear-gradient(90deg,#d97706,#f59e0b); }
+  .v-warning:hover { box-shadow: 0 26px 50px rgba(245,158,11,.16); }
+
+  /* — Plain white surface card — */
+  .card {
+    @apply rounded-2xl bg-white p-6 ring-1 ring-ink/[0.06];
+    box-shadow: var(--shadow-soft);
+    transition: transform .28s cubic-bezier(.2,.7,.2,1), box-shadow .28s ease;
+  }
+  .card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lift); }
+
+  /* — Glassmorphism / frost panel — */
+  .frost {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px) saturate(140%);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+  }
+  .frost-dark {
+    background: rgba(13, 19, 38, 0.55);
+    backdrop-filter: blur(20px) saturate(130%);
+    -webkit-backdrop-filter: blur(20px) saturate(130%);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+  }
+
+  /* — Buttons (brand-book variants) — */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold text-white;
+    background: var(--gradient-cta);
+    box-shadow: var(--glow-cta);
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 14px 36px rgba(109,40,217,.45); }
+  .btn-primary:focus-visible { outline: none; box-shadow: var(--glow-focus), var(--glow-cta); }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold text-indigo;
+    background: #eef2ff;
+    transition: background .2s ease;
+  }
+  .btn-secondary:hover { background: #e0e7ff; }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold text-white/90;
+    border: 1px solid rgba(255,255,255,0.28);
+    background: rgba(255,255,255,0.05);
+    transition: background .2s ease, border-color .2s ease;
+  }
+  .btn-ghost:hover { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.45); }
+
+  .btn-command {
+    @apply inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 font-mono text-xs font-medium text-indigo;
+    background: #f5f3ff;
+    border: 1px solid #e0e7ff;
+  }
+
+  /* — Input (brand-book states) — */
+  .input {
+    @apply w-full rounded-xl bg-white px-4 py-3 text-sm text-ink placeholder-muted-lt outline-none;
+    border: 1px solid var(--color-border-lt);
+    transition: box-shadow .2s ease, border-color .2s ease;
+  }
+  .input:focus { border-color: var(--color-brand-lt); box-shadow: var(--glow-focus); }
+}
+
+@layer utilities {
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-rise { animation: rise .75s cubic-bezier(.2,.7,.2,1) both; }
+  .delay-1 { animation-delay: .07s; }
+  .delay-2 { animation-delay: .14s; }
+  .delay-3 { animation-delay: .21s; }
+  .delay-4 { animation-delay: .28s; }
+  .delay-5 { animation-delay: .35s; }
+
+  .text-gradient {
+    background: linear-gradient(90deg, #4f46e5, #8b5cf6);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+}
