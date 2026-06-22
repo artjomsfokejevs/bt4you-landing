@@ -174,7 +174,7 @@ export default function ProductsDeepDive() {
                       loading="lazy"
                     />
                     <div className="mt-2 text-center font-mono text-[9px] uppercase tracking-[0.12em] text-white/35">
-                      Real screen · captured from the live product
+                      Real product screen · company anonymized
                     </div>
                   </Frame>
                 ) : (

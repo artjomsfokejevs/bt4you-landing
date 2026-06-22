@@ -263,7 +263,9 @@ export const products = {
       name: "Compass",
       tagline: "Digital business controller",
       mock: "vantage",
-      body: "Continuously reads team and product performance and tells you whether you’re still on the growth curve — and where the next margin is hiding. (Figures below are illustrative.)",
+      shot: "/brand/screenshots/compass.png",
+      shotLabel: "compass · strategy 26/27 — analytics-driven growth points",
+      body: "Continuously reads team and product performance and tells you whether you’re still on the growth curve — and where the next margin is hiding. Below: a real Compass output (company anonymized).",
       points: [
         "KPI strip: season revenue, gross margin %, and operational savings — at a glance",
         "Gross-margin % per product line straight from the data warehouse",
@@ -332,7 +334,7 @@ export const cta = {
   contactEmail: "artjoms.fokejevs@gmail.com",
   // Paste your free Web3Forms access key (https://web3forms.com — tied to the
   // email above). While empty, the form falls back to a mailto: link.
-  formAccessKey: "",
+  formAccessKey: "d8484c3a-da42-435f-909c-87241eba0467",
   subject: "New BT4YOU access request",
   successMsg: "Thanks — we’ll be in touch shortly.",
   errorMsg: "Something went wrong. Please email us directly.",
