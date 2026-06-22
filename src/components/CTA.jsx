@@ -1,7 +1,43 @@
+import { useState } from "react"
 import { Arrow } from "./Icons"
 import { cta } from "../content"
 
 export default function CTA() {
+  const [status, setStatus] = useState("idle") // idle | sending | success | error
+
+  async function handleSubmit(e) {
+    e.preventDefault()
+    const email = e.target.email.value.trim()
+    if (!email) return
+
+    // No form backend configured yet → fall back to the visitor's mail client.
+    if (!cta.formAccessKey) {
+      window.location.href =
+        `mailto:${cta.contactEmail}?subject=${encodeURIComponent(cta.subject)}` +
+        `&body=${encodeURIComponent(`Access request from: ${email}`)}`
+      return
+    }
+
+    setStatus("sending")
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: cta.formAccessKey,
+          subject: cta.subject,
+          from_name: "BT4YOU landing",
+          email,
+          message: `New access request from ${email}`,
+        }),
+      })
+      const data = await res.json()
+      setStatus(data.success ? "success" : "error")
+    } catch {
+      setStatus("error")
+    }
+  }
+
   return (
     <section id="cta" className="mx-auto max-w-6xl px-6 py-20">
       <div className="gradient-hero relative overflow-hidden rounded-3xl px-8 py-16 text-center shadow-lift sm:px-16">
@@ -14,16 +50,33 @@ export default function CTA() {
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-white/70">{cta.subtitle}</p>
 
-          <form
-            className="mx-auto mt-8 flex max-w-md flex-col gap-3 sm:flex-row"
-            onSubmit={(e) => e.preventDefault()}
+          {status === "success" ? (
+            <div className="mx-auto mt-8 max-w-md rounded-xl bg-white/10 px-6 py-5 text-white ring-1 ring-white/20">
+              ✓ {cta.successMsg}
+            </div>
+          ) : (
+            <form className="mx-auto mt-8 flex max-w-md flex-col gap-3 sm:flex-row" onSubmit={handleSubmit}>
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="you@company.com"
+                className="input !bg-white/95"
+              />
+              <button type="submit" disabled={status === "sending"} className="btn-secondary whitespace-nowrap disabled:opacity-60">
+                {status === "sending" ? "Sending…" : cta.primary} <Arrow className="h-4 w-4" />
+              </button>
+            </form>
+          )}
+
+          {status === "error" && (
+            <p className="mt-3 text-sm text-red-200">{cta.errorMsg}</p>
+          )}
+
+          <a
+            href={`mailto:${cta.contactEmail}`}
+            className="mt-4 inline-block text-sm font-medium text-white/65 underline-offset-4 hover:text-white hover:underline"
           >
-            <input type="email" required placeholder="you@company.com" className="input !bg-white/95" />
-            <button type="submit" className="btn-secondary whitespace-nowrap">
-              {cta.primary} <Arrow className="h-4 w-4" />
-            </button>
-          </form>
-          <a href="#" className="mt-4 inline-block text-sm font-medium text-white/65 underline-offset-4 hover:text-white hover:underline">
             {cta.secondary}
           </a>
         </div>

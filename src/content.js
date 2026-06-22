@@ -328,6 +328,14 @@ export const cta = {
     "BT4YOU is in production across a 21-country group. Request access and put your executive layer on one source of truth.",
   primary: "Request access",
   secondary: "Talk to the team",
+  // Where access requests are delivered.
+  contactEmail: "artjoms.fokejevs@gmail.com",
+  // Paste your free Web3Forms access key (https://web3forms.com — tied to the
+  // email above). While empty, the form falls back to a mailto: link.
+  formAccessKey: "",
+  subject: "New BT4YOU access request",
+  successMsg: "Thanks — we’ll be in touch shortly.",
+  errorMsg: "Something went wrong. Please email us directly.",
 }
 
 export const footer = {
