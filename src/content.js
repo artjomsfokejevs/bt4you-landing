@@ -1,6 +1,6 @@
 // ============================================================
 //  BT4YOU Executive Bot — landing copy (single source of truth)
-//  Positioning: a digital executive operating system.
+//  Positioning: a digital executive layer / executive systems.
 //  Edit text here; components stay untouched.
 // ============================================================
 
@@ -321,9 +321,9 @@ export const cta = {
 }
 
 export const footer = {
-  tagline: "The digital executive operating system — strategy, money, communication, and operations on one source of truth.",
+  tagline: "The digital executive layer — strategy, money, communication, and operations on one source of truth.",
   columns: [
-    { title: "Platform", links: ["Operating model", "Total control", "Control room", "Ecosystem"] },
+    { title: "Platform", links: ["Philosophy", "Process", "Total control", "Ecosystem"] },
     { title: "Systems", links: ["BT4YOU Executive Bot", "Keel", "Sonar", "Compass", "Forge"] },
     { title: "Company", links: ["About the founder", "Contact", "Request access"] },
   ],
