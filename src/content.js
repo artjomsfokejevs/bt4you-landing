@@ -6,14 +6,14 @@
 
 export const brand = {
   name: "BT4YOU",
-  product: "Executive Operating System",
-  full: "BT4YOU Executive Operating System",
+  product: "Executive Systems",
+  full: "BT4YOU Executive Systems",
 }
 
 export const nav = {
   links: [
-    { label: "Thesis", href: "#thesis" },
-    { label: "Operating model", href: "#model" },
+    { label: "Philosophy", href: "#thesis" },
+    { label: "Process", href: "#model" },
     { label: "Control", href: "#control" },
     { label: "Ecosystem", href: "#systems" },
     { label: "Security", href: "#security" },
@@ -23,19 +23,19 @@ export const nav = {
 }
 
 export const hero = {
-  badge: "BT4YOU · EXECUTIVE OPERATING SYSTEM",
-  title: ["An operating system for", "running the whole company."],
+  badge: "BT4YOU · EXECUTIVE SYSTEMS",
+  title: ["The digital executive layer", "for the modern C-Suite."],
   subtitle:
-    "BT4YOU is a digital executive layer. It turns your company structure, product policy, business model, and OKRs into a living matrix of accountability — then tracks every stakeholder, meeting, and decision against the goal, every single day.",
-  primaryCta: "Request access",
+    "Designed to solve the integration chaos of classic ERPs and financial tools. BT4YOU is your digital executive layer that translates your product ecosystem, business model, company structure, and OKRs into an actionable framework. Align every meeting, decision, and team member's actions with your ultimate goals — without the micromanagement. See your entire company move on one screen.",
+  primaryCta: "Request Access",
   secondaryCta: "See the operating model",
   note: "Built and run by the team behind Alps2Alps · 21 countries · in production",
 }
 
 export const heroStats = [
-  { value: "1", label: "Source of truth for the entire executive layer" },
-  { value: "24/7", label: "Tracking of every stakeholder against the goal" },
-  { value: "5", label: "Connected systems — four that run the business, one that builds them" },
+  { value: "1", label: "Source of truth for the entire executive layer." },
+  { value: "24/7", label: "Visibility — see how every decision impacts your core goals." },
+  { value: "5", label: "Integrated modules — everything to run and scale the business in one ecosystem." },
 ]
 
 // — Trust strip (social proof) —
@@ -59,49 +59,29 @@ export const security = {
   ],
 }
 
-// — Manifesto / why this exists —
+// — Manifesto / philosophy —
 export const thesis = {
-  eyebrow: "THE THESIS",
-  title: "The hardest problem in business isn’t capital or technology. It’s managing people.",
+  eyebrow: "THE PHILOSOPHY",
+  title: "The BT4YOU Philosophy: technology that adapts to you.",
   paragraphs: [
-    "When responsibility lives in people’s heads, ownership stays implicit, decisions get lost between meetings, and organisations quietly bleed efficiency. You feel it as missed follow-ups, blurred accountability, and strategy that never reaches the front line.",
-    "BT4YOU answers it with a single idea: a digital matrix of accountability. Every responsibility is made explicit, delegated to an owner, and wrapped in an automated process — so execution no longer depends on who remembers what.",
+    "Classic ERP systems force your company to adapt to their logic. We built Business Technologies that adapt to YOU. Your structure. Your metrics. Your matrix of accountability. That is the core of BT4YOU.",
+    "But true transformation isn't just a software installation — it's a strategic journey we take alongside your key stakeholders. Rather than handing you a blank system, we co-create your operational reality.",
   ],
-  contrast: {
-    without: {
-      label: "WITHOUT BT4YOU",
-      points: [
-        "Strategy lives in slides nobody revisits",
-        "Decisions evaporate after the meeting ends",
-        "Ownership is implied, never tracked",
-        "Efficiency leaks where no process exists",
-      ],
-    },
-    with: {
-      label: "WITH BT4YOU",
-      points: [
-        "Strategy cascades into daily, owned work",
-        "Every decision and agreement is recorded",
-        "Each stakeholder is tracked against the goal",
-        "The process runs whether you’re in the room or not",
-      ],
-    },
-  },
+  highlight: "Your structure. Your metrics. Your matrix of accountability.",
 }
 
-// — The operating model: strategy → execution loop —
+// — The process: we co-create your operational reality (4 steps) —
 export const model = {
-  eyebrow: "THE OPERATING MODEL",
-  title: "From a validated idea to daily execution — one closed loop.",
-  body: "BT4YOU encodes the full arc — from proving the product to running it every day — and never stops the loop. Each stage feeds the next, and daily execution feeds straight back to growth.",
+  eyebrow: "THE PROCESS",
+  title: "We co-create your operational reality.",
+  body: "Rather than handing you a blank system, we engineer it alongside your key stakeholders — in four steps.",
   steps: [
-    { k: "01", title: "Product validation", body: "It all starts by validating the product and the solution — proof the problem is real and worth solving before a euro is spent." },
-    { k: "02", title: "MVP & Proof of Concept", body: "An MVP plan is shipped, launched, and validated as a Proof of Concept — real signal in the market before real investment." },
-    { k: "03", title: "Product architecture", body: "The digital product architecture takes shape: how it works, how we analyse it, and how the team interacts with it day to day." },
-    { k: "04", title: "Business model", body: "In parallel with architecture, the business model is built — defining the core economics, the real potential, and where the upside lives." },
-    { k: "05", title: "OKR & KPI → stakeholders", body: "Objectives and KPIs cascade to every stakeholder, who reports into their own dashboard and knows exactly what they own." },
-    { k: "06", title: "Daily execution", body: "Daily execution closes the loop — returning learning to the product growth point that keeps moving the company forward." },
+    { k: "01", title: "Define the Architecture", body: "We map out your exact product and business architecture to ensure the system mirrors real life." },
+    { k: "02", title: "Rebuild the Business Model", body: "We re-evaluate and optimise your core economics to unlock new efficiencies." },
+    { k: "03", title: "Lock in Driving OKRs", body: "We pinpoint and integrate the precise objectives that actually move the needle for your company." },
+    { k: "04", title: "Co-create the Process", body: "Together we engineer a dynamic, automated execution loop that empowers your company to scale and grow exponentially faster." },
   ],
+  conclusion: "The result: a digital executive layer built exactly for the way your business needs to run.",
 }
 
 // — What BT4YOU puts under control —

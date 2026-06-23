@@ -11,7 +11,7 @@ export default function OperatingModel() {
           <p className="mt-5 text-lg leading-relaxed text-muted-dk">{m.body}</p>
         </div>
 
-        <div className="mt-14 grid gap-px overflow-hidden rounded-2xl bg-border ring-1 ring-border sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-px overflow-hidden rounded-2xl bg-border ring-1 ring-border sm:grid-cols-2 lg:grid-cols-4">
           {m.steps.map((s, i) => (
             <div key={s.k} className="group relative bg-white p-7 transition hover:bg-soft">
               <div className="flex items-center gap-3">
@@ -26,9 +26,12 @@ export default function OperatingModel() {
             </div>
           ))}
         </div>
-        <p className="mt-6 text-center font-mono text-[11px] uppercase tracking-[0.16em] text-muted-lt">
-          Daily execution closes the loop back to strategy
-        </p>
+
+        {m.conclusion && (
+          <p className="display mx-auto mt-12 max-w-3xl text-center text-2xl font-medium leading-snug text-deep-blue sm:text-3xl">
+            {m.conclusion}
+          </p>
+        )}
       </div>
     </section>
   )
