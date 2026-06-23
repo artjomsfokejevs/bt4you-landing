@@ -41,7 +41,7 @@ export const heroStats = [
 // — Trust strip (social proof) —
 export const trust = {
   label: "Running in production across the group",
-  names: ["Alps2Alps", "Skipasser", "Mountly", "TransferHub"],
+  names: ["Alps2Alps", "Skipasser", "Mountly", "MyPeakFinance", "Alveda"],
 }
 
 // — Security & data —
