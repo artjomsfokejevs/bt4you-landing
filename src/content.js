@@ -103,21 +103,21 @@ export const control = {
 export const systems = {
   eyebrow: "THE ECOSYSTEM",
   title: "A digital C-suite, running the business.",
-  body: "BT4YOU sits at the centre. Keel runs the money, Sonar runs every conversation, and Compass reads performance — three instruments feeding one unbreakable source of truth — while Forge builds, improves, and maintains the entire stack. Together they run as one digital C-suite.",
+  body: "It isn't one bot — it's a whole executive team in software. Keel runs the money. Sonar runs every customer conversation. Compass reads performance in hard numbers. Forge builds and maintains the entire stack. And BT4YOU sits at the centre — the chief of staff that turns all of it into decisions.",
   items: [
     {
       name: "BT4YOU Executive Bot",
       tag: "EXECUTIVE OS",
       v: "v-brand",
-      body: "It unites the key strategic processes under one roof and quietly accumulates the company's memory — every date, event, decision, agreement, and external signal. From decision dynamics, product performance, and recorded agreements, it shows the CEO exactly where problems are concentrating and what to do next — and continuously proposes sharper business models, OKRs, and SOPs. A living environment for running the business.",
+      body: "The chief of staff. It accumulates the company's memory — every decision, agreement, number, and signal — then turns it into action: showing the CEO exactly where problems are concentrating, what to do next, and proposing sharper business models, OKRs, and SOPs. The brain the rest of the stack reports into.",
       highlight: "Names the problem and the fix — in real time",
     },
     {
       name: "Keel",
       tag: "DIGITAL CFO",
       v: "v-warning",
-      body: "The digital CFO — the keel that keeps the business balanced. It starts as your accountant, collecting and verifying every document against budget, then becomes controller and CFO: cost and revenue analysis, cashflow planning, fraud detection, and margin optimisation.",
-      highlight: "Accountant, controller and CFO — one unbroken data flow",
+      body: "Your digital CFO — the keel that keeps the business balanced. It starts as the accountant (every document collected and checked against budget), then runs as controller and CFO: cost and revenue analysis, cashflow planning, fraud detection, and margin optimisation.",
+      highlight: "Accountant, controller, and CFO — in one",
     },
     {
       name: "Sonar",
@@ -130,14 +130,14 @@ export const systems = {
       name: "Compass",
       tag: "BUSINESS CONTROL",
       v: "v-info",
-      body: "The digital analyst and business controller. It continuously gathers the performance of both the team and the product, sees the business-positive patterns no human could hold in their head, and tells you — in hard numbers — whether you're still moving forward against your product and economic targets. Running on Alps2Alps operations.",
+      body: "Your digital analyst. It reads the performance of the team and the product, spots the patterns no human could hold in their head, and tells you — in hard numbers — whether you're still on the growth curve. Running on Alps2Alps operations.",
       highlight: "Always knows if you're still on the curve",
     },
     {
       name: "Forge",
       tag: "THE FACTORY",
       v: "v-violet",
-      body: "The ecosystem that builds the ecosystem. It carries an idea to a shipped product end to end — and learns interactively, getting faster, sharper, and higher in quality with every system it builds. One stakeholder, a whole product factory.",
+      body: "The factory that builds the factory. It carries an idea to a shipped product end to end, and gets faster, sharper, and higher in quality with every system it builds. One stakeholder, a whole product team.",
       highlight: "The system that builds the systems",
     },
   ],
