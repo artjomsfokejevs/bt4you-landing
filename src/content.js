@@ -87,15 +87,15 @@ export const model = {
 // — What BT4YOU puts under control —
 export const control = {
   eyebrow: "TOTAL CONTROL",
-  title: "Everything that moves the company.",
-  body: "Once the product, architecture, and business model exist, BT4YOU keeps the whole thing in motion — tracking the economics, the conversations, the commitments, and the speed at which decisions turn into delivery.",
+  title: "Everything that moves the company — on the record.",
+  body: "Once the product, architecture, and business model exist, BT4YOU keeps it all in motion: every euro, every conversation, every commitment, and the speed at which decisions turn into delivery. From said to shipped, nothing falls through.",
   items: [
-    { tag: "FINANCE", v: "v-warning", title: "Business-model tracking", body: "Keel, the digital CFO, tracks the financial and performance side of the business model — plus live product analytics — so you always know if the economics are working." },
-    { tag: "MEETINGS", v: "v-violet", title: "Meeting intelligence", body: "Every meeting analysed to follow the real progress of the product and the processes around it — the dynamics of results, not just notes." },
-    { tag: "AGREEMENTS", v: "v-info", title: "Agreement ledger", body: "Decisions and commitments made in conversation become recorded, tracked obligations — tasks and agreements fixed in place." },
-    { tag: "TASKS", v: "v-success", title: "Task control", body: "Every commitment becomes an owner-assigned task, tracked from open to done — execution monitored end to end." },
-    { tag: "COMMUNICATION", v: "v-brand", title: "Communication oversight", body: "Full visibility across the flow — at the task level and across general communication — the whole company in one place." },
-    { tag: "DECISIONS", v: "v-violet", title: "Decision dynamics", body: "The speed of decisions and the speed of execution, measured — so the big roadmap actually gets delivered, on time." },
+    { tag: "FINANCE", v: "v-warning", title: "The money, in real time", body: "Keel, your digital CFO, watches the economics and live product analytics — so you always know whether the model is actually making money." },
+    { tag: "MEETINGS", v: "v-violet", title: "Meeting intelligence", body: "Every meeting analysed for what it changed: decisions made, progress moved, risks surfaced — the dynamics of results, not the minutes." },
+    { tag: "DECISIONS", v: "v-brand", title: "Decision velocity", body: "How fast decisions get made — and then executed — measured, so a big roadmap turns into shipped work, on time." },
+    { tag: "AGREEMENTS", v: "v-info", title: "The commitment ledger", body: "Who promised what, to whom, by when — every commitment recorded and tracked, never lost in the thread." },
+    { tag: "TASKS", v: "v-success", title: "Execution control", body: "Each commitment becomes an owner-assigned task, open → done — execution watched end to end." },
+    { tag: "COMMUNICATION", v: "v-violet", title: "One communication feed", body: "Calls, email, and chat in a single oversight feed — the whole company's flow, without the silos." },
   ],
 }
 
