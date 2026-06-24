@@ -73,15 +73,15 @@ export const thesis = {
 // — The process: we co-create your operational reality (4 steps) —
 export const model = {
   eyebrow: "THE PROCESS",
-  title: "We co-create your operational reality.",
-  body: "Rather than handing you a blank system, we engineer it alongside your key stakeholders — in four steps.",
+  title: "Built with you. Not just for you.",
+  body: "No blank template to fill in. We engineer your executive layer alongside your key people — architecture, economics, objectives, and the loop that runs them.",
   steps: [
-    { k: "01", title: "Define the Architecture", body: "We map out your exact product and business architecture to ensure the system mirrors real life." },
-    { k: "02", title: "Rebuild the Business Model", body: "We re-evaluate and optimise your core economics to unlock new efficiencies." },
-    { k: "03", title: "Lock in Driving OKRs", body: "We pinpoint and integrate the precise objectives that actually move the needle for your company." },
-    { k: "04", title: "Co-create the Process", body: "Together we engineer a dynamic, automated execution loop that empowers your company to scale and grow exponentially faster." },
+    { k: "01", title: "Map the Architecture", body: "We map your real product and business architecture — so the system mirrors how your company actually works, not a vendor's idea of it." },
+    { k: "02", title: "Rebuild the Business Model", body: "We re-examine your unit economics and rebuild the model around what truly drives margin — before a single part of it is automated." },
+    { k: "03", title: "Lock in the OKRs that matter", body: "We pinpoint the few objectives that actually move your business and wire them straight into the system — so every team is aimed at the same target." },
+    { k: "04", title: "Engineer the Execution Loop", body: "Together we build a self-running, automated loop — decision → task → result → learning — that gets stronger as you scale." },
   ],
-  conclusion: "The result: a digital executive layer built exactly for the way your business needs to run.",
+  conclusion: "The result: a digital executive layer shaped to the way your business actually runs — not the way software wishes it did.",
 }
 
 // — What BT4YOU puts under control —
