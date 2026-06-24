@@ -28,7 +28,7 @@ export const hero = {
   subtitle:
     "Designed to solve the integration chaos of classic ERPs and financial tools. BT4YOU is your digital executive layer that translates your product ecosystem, business model, company structure, and OKRs into an actionable framework. Align every meeting, decision, and team member's actions with your ultimate goals — without the micromanagement. See your entire company move on one screen.",
   primaryCta: "Request Access",
-  secondaryCta: "See the operating model",
+  secondaryCta: "See how it works",
   note: "Built and run by the team behind Alps2Alps · 21 countries · in production",
 }
 
@@ -70,7 +70,7 @@ export const thesis = {
   highlight: "Not another system to adapt to — the first one that adapts to you.",
 }
 
-// — The process: we co-create your operational reality (4 steps) —
+// — The process: built with you (4 steps) —
 export const model = {
   eyebrow: "THE PROCESS",
   title: "Built with you. Not just for you.",
