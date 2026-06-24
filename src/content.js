@@ -62,12 +62,12 @@ export const security = {
 // — Manifesto / philosophy —
 export const thesis = {
   eyebrow: "THE PHILOSOPHY",
-  title: "The BT4YOU Philosophy: technology that adapts to you.",
+  title: "Your company isn't a template. Your software shouldn't be either.",
   paragraphs: [
-    "Classic ERP systems force your company to adapt to their logic. We built Business Technologies that adapt to YOU. Your structure. Your metrics. Your matrix of accountability. That is the core of BT4YOU.",
-    "But true transformation isn't just a software installation — it's a strategic journey we take alongside your key stakeholders. Rather than handing you a blank system, we co-create your operational reality.",
+    "Classic ERPs force your company to bend to their logic — their workflows, their fields, their idea of how a business should run. We flipped it. BT4YOU — Business Technologies, 4 YOU — bends to your structure, your metrics, your matrix of accountability. That's the whole idea.",
+    "And it isn't a software install — it's a strategic journey we run alongside your key stakeholders. We don't hand you a blank system and wish you luck. We engineer your operational reality together, with you in the room.",
   ],
-  highlight: "Your structure. Your metrics. Your matrix of accountability.",
+  highlight: "Not another system to adapt to — the first one that adapts to you.",
 }
 
 // — The process: we co-create your operational reality (4 steps) —
