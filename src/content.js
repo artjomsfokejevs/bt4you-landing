@@ -153,7 +153,7 @@ export const systems = {
 export const control_room = {
   eyebrow: "THE CONTROL ROOM",
   title: "This is what running a company on one screen looks like.",
-  body: "Not a generic dashboard — the real Chief Product Officer cockpit inside BT4YOU Executive Bot: live sprint delivery against plan, plan-vs-fact efficiency, per-developer capacity, and AI-ranked criticality, in a single view.",
+  body: "No weekly status meeting produced this. It's the live Chief Product Officer cockpit inside BT4YOU — plan-vs-fact efficiency, a computed pace verdict and ship date, per-developer capacity, and AI-ranked criticality, every number pulled from real task data, not self-reported updates. And it's just one of six — a cockpit for every seat at the table.",
   url: "bt4you.ai / product-management",
   tabs: ["Dashboard", "Products", "Architecture", "AI Bot", "Sprint Archive", "Report", "Efficiency"],
   role: "👔 CPO Dashboard",
@@ -163,7 +163,7 @@ export const control_room = {
   kpis: [
     { label: "Total Tasks", value: "142", sub: "across 17 products", tone: "ink" },
     { label: "Overall Completion", value: "68%", sub: "96 done · 46 open", tone: "info" },
-    { label: "Plan vs Fact", value: "112%", sub: "1,247h / 1,113h closed", tone: "warning" },
+    { label: "Plan vs Fact", value: "112%", sub: "1,247h / 1,113h closed", tone: "warning", hl: true },
     { label: "Planned Hours", value: "1,390h", sub: "28 validated features", tone: "violet" },
     { label: "Done in Period", value: "31", sub: "👔 PM 12 · 💻 Dev 19", tone: "success" },
     { label: "Overdue Tasks", value: "5", sub: "need attention", tone: "danger" },
@@ -179,7 +179,7 @@ export const control_room = {
     { label: "DAYS INTO Q2", value: "38 / 91", sub: "53 biz-days left" },
     { label: "CAPACITY LEFT", value: "742h", sub: "of 3,360h · 7×160×3" },
     { label: "DAILY CLOSURE · 7D", value: "1.8/d", sub: "↑ vs last week" },
-    { label: "PACE VERDICT", value: "🟢 ON-TRACK", sub: "Ends 26 Jun · rate 1.8/d" },
+    { label: "PACE VERDICT", value: "🟢 ON-TRACK", sub: "Ends 26 Jun · rate 1.8/d", hl: true },
   ],
   capacity: [
     { name: "Engineer A", left: 62, note: "298h free · 182h/480h plan" },
@@ -193,6 +193,12 @@ export const control_room = {
     { key: "P3 60-69", n: 14, color: "#eab308" },
     { key: "P4 50-59", n: 9, color: "#0ea5e9" },
     { key: "P5 <50", n: 5, color: "#94a3b8" },
+  ],
+  // guided callouts that explain the 3 most telling mechanics on the dashboard
+  guide: [
+    { label: "Plan vs Fact", text: "Efficiency in hours — planned vs actual, not gut feel." },
+    { label: "Pace verdict", text: "An on-track / behind call and a ship date, computed from real task data." },
+    { label: "Per-dev capacity", text: "Who's free and who's over — staffing the sprint at a glance." },
   ],
 }
 

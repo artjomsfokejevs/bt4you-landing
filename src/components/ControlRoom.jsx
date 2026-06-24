@@ -66,7 +66,7 @@ export default function ControlRoom() {
             {/* KPI tiles */}
             <div className="mt-5 grid grid-cols-2 gap-px overflow-hidden rounded-xl bg-white/10 sm:grid-cols-3 lg:grid-cols-6">
               {d.kpis.map((k) => (
-                <div key={k.label} className="bg-ink/60 px-4 py-4">
+                <div key={k.label} className={`bg-ink/60 px-4 py-4 ${k.hl ? "ring-1 ring-inset ring-brand-lt/50" : ""}`}>
                   <div className={`display text-2xl font-semibold ${toneColor[k.tone] || "text-white"}`}>{k.value}</div>
                   <div className="mt-1 text-[11px] font-semibold text-white/75">{k.label}</div>
                   <div className="text-[10px] text-white/45">{k.sub}</div>
@@ -99,7 +99,7 @@ export default function ControlRoom() {
               <div className="rounded-xl bg-white/5 p-5 ring-1 ring-white/10">
                 <div className="grid grid-cols-2 gap-3">
                   {d.hours.map((h) => (
-                    <div key={h.label} className="rounded-lg bg-white/5 px-3 py-3">
+                    <div key={h.label} className={`rounded-lg px-3 py-3 ${h.hl ? "bg-brand-lt/10 ring-1 ring-inset ring-brand-lt/40" : "bg-white/5"}`}>
                       <div className="font-mono text-[9px] uppercase tracking-wider text-white/40">{h.label}</div>
                       <div className="display mt-1 text-lg font-semibold text-white">{h.value}</div>
                       <div className="text-[10px] text-white/45">{h.sub}</div>
@@ -145,6 +145,18 @@ export default function ControlRoom() {
             </div>
           </div>
         </div>
+
+        {/* guided callouts — what to look at on the cockpit above */}
+        {d.guide && (
+          <div className="mx-auto mt-6 grid max-w-4xl gap-3 sm:grid-cols-3">
+            {d.guide.map((g) => (
+              <div key={g.label} className="rounded-xl bg-white px-4 py-3 text-left shadow-soft ring-1 ring-border">
+                <div className="font-mono text-[10px] font-semibold uppercase tracking-wider text-indigo">↑ {g.label}</div>
+                <div className="mt-1 text-[13px] leading-snug text-muted-dk">{g.text}</div>
+              </div>
+            ))}
+          </div>
+        )}
 
         <p className="mt-5 text-center font-mono text-[11px] uppercase tracking-[0.14em] text-muted-lt">
           Recreated from the live BT4YOU Executive Bot · Product Management view
