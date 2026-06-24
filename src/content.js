@@ -305,9 +305,9 @@ export const founder = {
 
 export const cta = {
   badge: "EARLY ACCESS",
-  title: "Run your company like a system.",
+  title: "Stop adapting to your software.",
   subtitle:
-    "BT4YOU is in production across a 21-country group. Request access and put your executive layer on one source of truth.",
+    "BT4YOU already runs a 21-country group. Request access and put your entire executive layer — the money, the conversations, the decisions — on one source of truth that's built around your business, not the other way around.",
   primary: "Request access",
   secondary: "Talk to the team",
   // Where access requests are delivered.
