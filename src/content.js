@@ -284,9 +284,9 @@ export const founder = {
   // Leave empty ("") to keep the "AF" monogram.
   photo: "/brand/founder.jpg",
   lede:
-    "BT4YOU was started by Artjoms Fokejevs — an entrepreneur and systems-minded engineer who treats every business problem the same way: build a digital matrix of accountability, delegate ownership across the team, then automate the process around it.",
+    "Artjoms Fokejevs has spent eighteen years turning messy operations into systems — first on the shop floor as an engineer, then in the chair as a CEO. He meets every business problem the same way: make accountability explicit, delegate it, and automate the process around it.",
   belief:
-    "His conviction is simple — the hardest challenge today isn’t capital or technology, it’s managing people. Without effective, automated processes, organisations quietly lose their efficiency. So he builds the systems that make ownership explicit and execution automatic.",
+    "His conviction is simple — the hardest problem in business isn’t capital or technology, it’s managing people. Without effective, automated processes, organisations quietly bleed efficiency. So he builds the systems that make ownership explicit and execution automatic.",
   belief2:
     "The second challenge he never stops working on: building a product that is genuinely good — one that solves a real problem the market actually needs, and that scales — while shipping it fast, without trading away quality. Speed and quality at once is the bar. Forge and the whole BT4YOU stack exist to hit it, every time.",
   highlights: [
