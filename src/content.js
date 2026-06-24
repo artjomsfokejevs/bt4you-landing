@@ -47,14 +47,14 @@ export const trust = {
 // — Security & data —
 export const security = {
   eyebrow: "SECURITY & DATA",
-  title: "Built to enterprise standards from day one.",
-  body: "Your most sensitive data — finances, conversations, decisions — lives here. It's protected accordingly, with the controls a serious organisation expects.",
+  title: "The more it sees, the safer it has to be.",
+  body: "BT4YOU sees your money, your conversations, and your decisions. So it's held to the standard that demands — EU-resident, encrypted, single-tenant, and never used to train anyone else's models. The controls a serious organisation expects, built in from day one.",
   items: [
-    { icon: "globe", title: "EU data residency", body: "Hosted in the European Union, in the same region as your business. GDPR by design, not as an afterthought." },
+    { icon: "vault", title: "Your data stays yours", body: "Single-tenant by default — and never used to train anyone else's models. Your company's data trains nothing but your company." },
+    { icon: "globe", title: "EU data sovereignty", body: "Hosted in the EU, in your region. GDPR by design — not bolted on. Your data never leaves the jurisdiction you trust." },
     { icon: "lock", title: "Encrypted end to end", body: "Encrypted in transit and at rest. Secrets are injected at runtime and never live in the codebase." },
     { icon: "key", title: "Granular access & SSO", body: "Role-based access per function and per person, with single sign-on for your whole team." },
     { icon: "ledger", title: "Append-only audit trail", body: "Every action — who, what, when, from where — written to an immutable log. Nothing is ever silently changed." },
-    { icon: "vault", title: "Your data stays yours", body: "Single-tenant by default. Your data is never used to train anyone else's models." },
     { icon: "human", title: "Human-in-the-loop", body: "AI proposes; your people approve. Financial postings and key decisions always require a human." },
   ],
 }
