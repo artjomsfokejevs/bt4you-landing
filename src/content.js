@@ -313,13 +313,35 @@ export const cta = {
   badge: "EARLY ACCESS",
   title: "Stop adapting to your software.",
   subtitle:
-    "BT4YOU already runs a 21-country group. Request access and put your entire executive layer — the money, the conversations, the decisions — on one source of truth that's built around your business, not the other way around.",
-  primary: "Request access",
+    "BT4YOU already runs a 21-country group. Tell us where you're losing control, and we'll map your executive layer around it — the money, the conversations, the decisions, on one source of truth built around your business.",
+
+  // ── Step 1 — diagnostic hook (selecting a focus advances to the email step) ──
+  hookLabel: "Where does your business lose the most control today?",
+  options: [
+    { id: "money", label: "Money & cashflow" },
+    { id: "conversations", label: "Customer conversations" },
+    { id: "performance", label: "Performance & data" },
+    { id: "operations", label: "Operations & delivery" },
+  ],
+  focusLabel: "Focus",
+  changeLabel: "Change",
+
+  // ── Step 2 — capture ──
+  primary: "Get my executive-layer map",
+  emailPlaceholder: "you@company.com",
+  trust: "A real founder reads every request — no spam, and we never share your data.",
+  nextTitle: "What you get back",
+  next: [
+    "A tailored map of your executive layer, built around the area you picked",
+    "A private walkthrough on your numbers — not a generic pitch",
+    "Early-access pricing for the first cohort",
+  ],
   secondary: "Talk to the team",
+
   // Where access requests are delivered.
   contactEmail: "artjoms.fokejevs@gmail.com",
-  // Paste your free Web3Forms access key (https://web3forms.com — tied to the
-  // email above). While empty, the form falls back to a mailto: link.
+  // Free Web3Forms access key (https://web3forms.com — tied to the email above).
+  // While empty, the form falls back to a mailto: link.
   formAccessKey: "d8484c3a-da42-435f-909c-87241eba0467",
   subject: "New BT4YOU access request",
   successMsg: "Thanks — we’ll be in touch shortly.",
