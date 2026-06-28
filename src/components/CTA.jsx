@@ -117,6 +117,32 @@ export default function CTA() {
                 <p className="mb-5 text-left text-sm leading-relaxed text-white/75">{selected.blurb}</p>
               )}
 
+              {selected.sample && (
+                <div className="mb-5 rounded-xl bg-white/5 p-4 text-left ring-1 ring-white/10">
+                  <div className="flex items-center justify-between">
+                    <span className="font-mono text-[11px] font-medium uppercase tracking-[0.16em] text-white/55">
+                      {cta.sampleTitle}
+                    </span>
+                    <span className="rounded-full bg-warning/20 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-warning">
+                      {cta.sampleBadge}
+                    </span>
+                  </div>
+                  <div className="mt-3 space-y-1.5">
+                    {selected.sample.rows.map((r, i) => (
+                      <div key={i} className="flex items-center justify-between gap-3 text-sm">
+                        <span className="text-white/70">{r.label}</span>
+                        <span className="shrink-0 font-mono text-white/90">{r.value}</span>
+                      </div>
+                    ))}
+                    <div className="mt-2 flex items-center justify-between gap-3 border-t border-white/10 pt-2 text-sm">
+                      <span className="font-medium text-white/80">{cta.sampleTotalLabel}</span>
+                      <span className="shrink-0 font-mono font-semibold text-brand-lt">{selected.sample.total}</span>
+                    </div>
+                  </div>
+                  <p className="mt-3 text-[11px] italic leading-relaxed text-white/40">{cta.sampleDisclaimer}</p>
+                </div>
+              )}
+
               <form className="flex flex-col gap-3" onSubmit={handleSubmit}>
                 <input
                   type="email"
