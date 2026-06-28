@@ -374,6 +374,14 @@ export const cta = {
       persona: "For the operations lead",
       blurb:
         "A live map of how work actually flows through your operation — where the bottlenecks form, what each one costs you, and how to clear them fast. At its core it's resource optimization: the same modelling cut what's needed to meet the same demand by roughly a quarter — in any operation, in any industry.",
+      sample: {
+        rows: [
+          { label: "Resource consolidation, same demand", value: "−~25%" },
+          { label: "Clear the top throughput bottleneck", value: "+8–12%" },
+          { label: "Reduce quality / rework penalties", value: "~€0.2M/yr" },
+        ],
+        total: "~€0.9M/yr",
+      },
     },
   ],
   focusLabel: "Focus",
