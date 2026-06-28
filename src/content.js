@@ -313,10 +313,13 @@ export const cta = {
   badge: "EARLY ACCESS",
   title: "Stop adapting to your software.",
   subtitle:
-    "BT4YOU already runs a 21-country group. Tell us where you're losing control, and we'll map your executive layer around it — the money, the conversations, the decisions, on one source of truth built around your business.",
+    "BT4YOU runs a 21-country group on this engine. Tell us where your upside is — and it builds your growth model: the levers hiding in your business, each with a number on it, and the systems that capture them.",
+  // Social proof — the engine's real output, figure softened (exact internal A2A
+  // number is €2.8–3.2M/season; kept generic here to avoid publishing client data).
+  proof: "The same engine has surfaced millions per season in growth levers for a 21-country operator.",
 
   // ── Step 1 — diagnostic hook (selecting a focus advances to the email step) ──
-  hookLabel: "Where does your business lose the most control today?",
+  hookLabel: "Where's the biggest upside hiding in your business?",
   options: [
     { id: "money", label: "Money & cashflow" },
     { id: "conversations", label: "Customer conversations" },
@@ -327,14 +330,14 @@ export const cta = {
   changeLabel: "Change",
 
   // ── Step 2 — capture ──
-  primary: "Get my executive-layer map",
+  primary: "Build my growth model",
   emailPlaceholder: "you@company.com",
   trust: "A real founder reads every request — no spam, and we never share your data.",
   nextTitle: "What you get back",
   next: [
-    "A tailored map of your executive layer, built around the area you picked",
-    "A private walkthrough on your numbers — not a generic pitch",
-    "Early-access pricing for the first cohort",
+    "A growth model for your company — the specific levers, each with a € number on it",
+    "Where your margin actually hides — by segment, cohort, and account",
+    "A phased rollout: which BT4YOU systems capture each lever, and when",
   ],
   secondary: "Talk to the team",
 

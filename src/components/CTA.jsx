@@ -55,6 +55,13 @@ export default function CTA() {
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-white/70">{cta.subtitle}</p>
 
+          {cta.proof && (
+            <p className="mx-auto mt-5 inline-flex max-w-xl items-center gap-2 rounded-full bg-white/5 px-4 py-2 text-sm text-white/80 ring-1 ring-white/15">
+              <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-brand-lt" />
+              {cta.proof}
+            </p>
+          )}
+
           {status === "success" ? (
             <div className="mx-auto mt-8 max-w-md rounded-xl bg-white/10 px-6 py-5 text-white ring-1 ring-white/20">
               ✓ {cta.successMsg}
