@@ -10,6 +10,14 @@ export default function CTA() {
 
   async function handleSubmit(e) {
     e.preventDefault()
+
+    // Honeypot: a hidden field no human ever touches. Bots auto-fill it →
+    // silently pretend success so we don't tip them off, and never send.
+    if (e.target.botcheck && e.target.botcheck.checked) {
+      setStatus("success")
+      return
+    }
+
     const email = e.target.email.value.trim()
     if (!email) return
     const focus = selected ? selected.label : "Not specified"
@@ -34,6 +42,7 @@ export default function CTA() {
           email,
           focus_area: focus,
           message: `New access request from ${email}\nFocus area: ${focus}`,
+          botcheck: false, // Web3Forms server-side honeypot backstop
         }),
       })
       const data = await res.json()
@@ -144,6 +153,16 @@ export default function CTA() {
               )}
 
               <form className="flex flex-col gap-3" onSubmit={handleSubmit}>
+                {/* Honeypot — hidden from humans (display:none + off-tab + aria-hidden); bots fill it. */}
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  className="hidden"
+                  style={{ display: "none" }}
+                />
                 <input
                   type="email"
                   name="email"
