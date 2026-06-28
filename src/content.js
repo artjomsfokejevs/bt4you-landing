@@ -331,11 +331,11 @@ export const cta = {
         "See how every euro of margin is really made — cost of goods broken down to its drivers, overhead and OpEx allocated to the products that carry them, and the gross margin you actually keep by product and segment. Then pull the levers — pricing, cost mix, and the receivables-to-payables cycle — that move cashflow, not just the P&L.",
     },
     {
-      id: "behavior",
-      label: "Customer behavior",
+      id: "productfit",
+      label: "Customer & product fit",
       persona: "For the product marketer",
       blurb:
-        "A clear read on who your customers really are — the segments, the repeat and churn patterns, the cohorts worth the most over a lifetime — and what they keep signalling across every touchpoint. The evidence you need to decide what to build next and how to position it.",
+        "It starts in the conversation: we read every customer interaction to surface the real pain — then turn that pain into the product that answers it. From there it profiles your cohorts and shapes a hyper-specialized fit for each, while ongoing customer communication keeps quality honest. Voice in, the right product out.",
     },
     {
       id: "performance",
@@ -349,7 +349,7 @@ export const cta = {
       label: "Operations & delivery",
       persona: "For the operations lead",
       blurb:
-        "A live map of how delivery actually flows — where the bottlenecks form, what each one costs you, and how to clear them fast. The same modelling cut the fleet needed for the same demand by roughly a quarter; it does that for your operation.",
+        "A live map of how delivery and production actually flow — where the bottlenecks form, what each one costs you, and how to clear them fast. The same modelling cut the resources needed for the same demand by roughly a quarter — fleet, crew, or production capacity alike. It does that for your operation.",
     },
   ],
   focusLabel: "Focus",
