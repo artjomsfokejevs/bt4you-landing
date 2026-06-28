@@ -1,3 +1,3 @@
-# Canonical host: redirect www -> apex (301) before the SPA fallback
-https://www.bt4you.ai/* https://bt4you.ai/:splat 301
+# www -> apex (301) is handled by a Cloudflare zone Redirect Rule, NOT here:
+# Pages matches _redirects on path only, so a cross-host rule never fires (W129).
 /*    /index.html   200
