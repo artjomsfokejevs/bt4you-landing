@@ -3,7 +3,7 @@ import { Arrow, Check } from "./Icons"
 import { cta } from "../content"
 
 export default function CTA() {
-  const [pain, setPain] = useState("money") // selected focus id (null = step 1)
+  const [pain, setPain] = useState(null) // selected focus id (null = step 1)
   const [status, setStatus] = useState("idle") // idle | sending | success | error
 
   const selected = cta.options.find((o) => o.id === pain)
