@@ -48,6 +48,17 @@ export default function CTA() {
       <div className="gradient-hero relative overflow-hidden rounded-3xl px-8 py-16 text-center shadow-lift sm:px-16">
         <div className="pointer-events-none absolute -left-16 -top-16 h-64 w-64 rounded-full bg-indigo/30 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-20 -right-10 h-72 w-72 rounded-full bg-violet/25 blur-3xl" />
+
+        {cta.operatorStatus && (
+          <div className="absolute right-4 top-4 z-20 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white/85 ring-1 ring-white/15 backdrop-blur sm:right-6 sm:top-6">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-success-med opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-success-med" />
+            </span>
+            {cta.operatorStatus}
+          </div>
+        )}
+
         <div className="relative">
           <span className="eyebrow !text-brand-lt justify-center">{cta.badge}</span>
           <h2 className="display mx-auto mt-4 max-w-2xl text-3xl font-medium leading-tight text-white sm:text-[2.6rem]">
@@ -97,6 +108,10 @@ export default function CTA() {
                 <span className="text-white/40">· {cta.changeLabel}</span>
               </button>
 
+              {selected.blurb && (
+                <p className="mb-5 text-left text-sm leading-relaxed text-white/75">{selected.blurb}</p>
+              )}
+
               <form className="flex flex-col gap-3" onSubmit={handleSubmit}>
                 <input
                   type="email"
@@ -128,6 +143,12 @@ export default function CTA() {
                   </div>
                 ))}
               </div>
+
+              {cta.followup && (
+                <p className="mt-5 border-t border-white/10 pt-4 text-left text-xs italic leading-relaxed text-white/45">
+                  {cta.followup}
+                </p>
+              )}
             </div>
           )}
 

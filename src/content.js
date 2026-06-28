@@ -311,6 +311,7 @@ export const founder = {
 
 export const cta = {
   badge: "EARLY ACCESS",
+  operatorStatus: "Operator online",
   title: "Stop adapting to your software.",
   subtitle:
     "BT4YOU runs a 21-country group on this engine. Tell us where your upside is — and it builds your growth model: the levers hiding in your business, each with a number on it, and the systems that capture them.",
@@ -320,11 +321,32 @@ export const cta = {
 
   // ── Step 1 — diagnostic hook (selecting a focus advances to the email step) ──
   hookLabel: "Where's the biggest upside hiding in your business?",
+  // Each focus carries its own value story (shown on step 2 once selected).
   options: [
-    { id: "money", label: "Money & cashflow" },
-    { id: "conversations", label: "Customer conversations" },
-    { id: "performance", label: "Performance & data" },
-    { id: "operations", label: "Operations & delivery" },
+    {
+      id: "money",
+      label: "Money & cashflow",
+      blurb:
+        "Understand the real economics of your product — how cost of goods, overhead and OpEx are built, and how each one shapes the value you create. Then balance the revenue and cost streams, and turn receivables and payables into a structurally stronger cashflow.",
+    },
+    {
+      id: "conversations",
+      label: "Customer conversations",
+      blurb:
+        "Full follow-up across every customer interaction, on every channel — a true read on what each client needs and where their problem really is, with nothing left unclosed.",
+    },
+    {
+      id: "performance",
+      label: "Performance & data",
+      blurb:
+        "Your analytical layer — we build it on your data first, then it reads the business back to you and points, in hard numbers, to exactly where the problems are.",
+    },
+    {
+      id: "operations",
+      label: "Operations & delivery",
+      blurb:
+        "A live view of how your operation actually runs — where the bottlenecks form, how to surface them fast, and how to clear them before they cost you.",
+    },
   ],
   focusLabel: "Focus",
   changeLabel: "Change",
@@ -339,6 +361,8 @@ export const cta = {
     "Where your margin actually hides — by segment, cohort, and account",
     "A phased rollout: which BT4YOU systems capture each lever, and when",
   ],
+  followup:
+    "Once we see the area that hurts, the team may come back with a few targeted questions — a deeper analysis built on your reality before we propose the right module.",
   secondary: "Talk to the team",
 
   // Where access requests are delivered.
