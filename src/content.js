@@ -249,7 +249,7 @@ export const products = {
       name: "Compass",
       tagline: "Digital business controller",
       mock: "vantage",
-      shot: "/brand/screenshots/compass.png",
+      shot: "/brand/screenshots/compass.webp",
       shotLabel: "compass · strategy 26/27 — analytics-driven growth points",
       body: "Continuously reads team and product performance and tells you whether you’re still on the growth curve — and where the next margin is hiding. Below: a real Compass output (company anonymized).",
       points: [
