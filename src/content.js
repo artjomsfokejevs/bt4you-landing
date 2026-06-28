@@ -329,6 +329,14 @@ export const cta = {
       persona: "For the CFO",
       blurb:
         "See how every euro of margin is really made — cost of goods broken down to its drivers, overhead and OpEx allocated to the products that carry them, and the gross margin you actually keep by product and segment. Then pull the levers — pricing, cost mix, and the receivables-to-payables cycle — that move cashflow, not just the P&L.",
+      sample: {
+        rows: [
+          { label: "Re-price under-margin segments", value: "~€0.4M/yr" },
+          { label: "Reallocate overhead to true cost drivers", value: "~€0.2M/yr" },
+          { label: "Tighten the receivables–payables cycle", value: "~€0.3M cash" },
+        ],
+        total: "~€0.9M/yr",
+      },
     },
     {
       id: "productfit",
@@ -336,6 +344,14 @@ export const cta = {
       persona: "For the product marketer",
       blurb:
         "It starts in the conversation: we read every customer interaction to surface the real pain — then turn that pain into the product that answers it. From there it profiles your cohorts and shapes a hyper-specialized fit for each, while ongoing customer communication keeps quality honest. Voice in, the right product out.",
+      sample: {
+        rows: [
+          { label: "Reactivate dormant cohort (~5%)", value: "~€1.4M/yr" },
+          { label: "Hyper-specialized offer to top cohort", value: "+10–15% conv." },
+          { label: "Cut churn on best cohort by ~3pp", value: "~€0.3M/yr" },
+        ],
+        total: "~€1.7M/yr",
+      },
     },
     {
       id: "performance",
@@ -343,6 +359,14 @@ export const cta = {
       persona: "For the product analyst",
       blurb:
         "We stand up the analytical layer on your own data, then it reads the business back in hard numbers — the cohorts, the margins, the patterns no one could hold in their head — and points to exactly where performance leaks. The analysis you'd spend a quarter building, live from day one.",
+      sample: {
+        rows: [
+          { label: "Close the margin leak in 2 segments", value: "~€0.5M/yr" },
+          { label: "LTV uplift on the growing cohort", value: "~€0.4M/yr" },
+          { label: "Stop loss-making accounts", value: "~€0.1M/yr" },
+        ],
+        total: "~€1.0M/yr",
+      },
     },
     {
       id: "operations",
@@ -354,6 +378,13 @@ export const cta = {
   ],
   focusLabel: "Focus",
   changeLabel: "Change",
+
+  // ── Sample growth-model draft (shown on step 2 per focus) ──
+  sampleTitle: "Sample growth model",
+  sampleBadge: "DRAFT",
+  sampleTotalLabel: "Identified upside",
+  sampleDisclaimer:
+    "A deliberately rough, generic preview — illustrative numbers only. Your real growth model arrives as a full document: detailed levers, charts, and growth projections built on your company's own data.",
 
   // ── Step 2 — capture ──
   primary: "Build my growth model",
