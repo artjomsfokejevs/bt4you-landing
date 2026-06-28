@@ -326,26 +326,30 @@ export const cta = {
     {
       id: "money",
       label: "Money & cashflow",
+      persona: "For the CFO",
       blurb:
-        "Understand the real economics of your product — how cost of goods, overhead and OpEx are built, and how each one shapes the value you create. Then balance the revenue and cost streams, and turn receivables and payables into a structurally stronger cashflow.",
+        "See how every euro of margin is really made — cost of goods broken down to its drivers, overhead and OpEx allocated to the products that carry them, and the gross margin you actually keep by product and segment. Then pull the levers — pricing, cost mix, and the receivables-to-payables cycle — that move cashflow, not just the P&L.",
     },
     {
-      id: "conversations",
-      label: "Customer conversations",
+      id: "behavior",
+      label: "Customer behavior",
+      persona: "For the product marketer",
       blurb:
-        "Full follow-up across every customer interaction, on every channel — a true read on what each client needs and where their problem really is, with nothing left unclosed.",
+        "A clear read on who your customers really are — the segments, the repeat and churn patterns, the cohorts worth the most over a lifetime — and what they keep signalling across every touchpoint. The evidence you need to decide what to build next and how to position it.",
     },
     {
       id: "performance",
       label: "Performance & data",
+      persona: "For the product analyst",
       blurb:
-        "Your analytical layer — we build it on your data first, then it reads the business back to you and points, in hard numbers, to exactly where the problems are.",
+        "We stand up the analytical layer on your own data, then it reads the business back in hard numbers — the cohorts, the margins, the patterns no one could hold in their head — and points to exactly where performance leaks. The analysis you'd spend a quarter building, live from day one.",
     },
     {
       id: "operations",
       label: "Operations & delivery",
+      persona: "For the operations lead",
       blurb:
-        "A live view of how your operation actually runs — where the bottlenecks form, how to surface them fast, and how to clear them before they cost you.",
+        "A live map of how delivery actually flows — where the bottlenecks form, what each one costs you, and how to clear them fast. The same modelling cut the fleet needed for the same demand by roughly a quarter; it does that for your operation.",
     },
   ],
   focusLabel: "Focus",

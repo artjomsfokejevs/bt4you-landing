@@ -108,6 +108,11 @@ export default function CTA() {
                 <span className="text-white/40">· {cta.changeLabel}</span>
               </button>
 
+              {selected.persona && (
+                <p className="mb-2 text-left text-[11px] font-semibold uppercase tracking-wider text-brand-lt">
+                  {selected.persona}
+                </p>
+              )}
               {selected.blurb && (
                 <p className="mb-5 text-left text-sm leading-relaxed text-white/75">{selected.blurb}</p>
               )}
