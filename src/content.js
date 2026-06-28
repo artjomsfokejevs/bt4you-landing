@@ -349,7 +349,7 @@ export const cta = {
       label: "Operations & delivery",
       persona: "For the operations lead",
       blurb:
-        "A live map of how delivery and production actually flow — where the bottlenecks form, what each one costs you, and how to clear them fast. The same modelling cut the resources needed for the same demand by roughly a quarter — fleet, crew, or production capacity alike. It does that for your operation.",
+        "A live map of how work actually flows through your operation — where the bottlenecks form, what each one costs you, and how to clear them fast. At its core it's resource optimization: the same modelling cut what's needed to meet the same demand by roughly a quarter — in any operation, in any industry.",
     },
   ],
   focusLabel: "Focus",
