@@ -251,22 +251,22 @@ export const products = {
       mock: "vantage",
       shots: [
         {
-          src: "/brand/screenshots/growth-model.webp",
+          src: "/brand/screenshots/compass.webp",
           label: "compass · growth model — the plan",
-          caption: "Generic preview · illustrative data",
+          caption: "Real dashboard · company hidden, some figures adjusted",
         },
         {
           src: "/brand/screenshots/analytics-manager.webp",
           label: "compass · analytics manager — is the model working?",
-          caption: "Generic preview · illustrative data",
+          caption: "Real dashboard · company hidden, some figures adjusted",
         },
       ],
-      body: "Compass works at the strategy level. First it builds your growth model — where the upside is, the levers that capture it, and the roadmap to realise them. Then a stack of analytics modules scores, live and in hard numbers, whether that model is actually working. The plan on top; the telemetry underneath.",
+      body: "Compass turns strategy into numbers, numbers into processes, and processes into accountability — a live OKR/KPI system wired to your real data. First it builds your growth model: the levers, the targets, the roadmap. Then a stack of analytics modules reads the real numbers and tells you, continuously, what's working and what isn't — so the strategy actually gets executed, not just written.",
       points: [
-        "Growth model: your quantified levers — each with a € number, an owner, and a capture path — plus the roadmap and target upside",
-        "Analytics manager: modules for demand, business model & margin, resource & operations, conversion & pricing, cohort LTV, and team efficiency",
-        "Every module scores execution against the model's target — green ≥95%, amber 70–94%, red below — so a slipping lever shows the day it slips",
-        "Built on your own data, in any industry — the model is the product, not any one vertical view",
+        "Strategy → numbers → processes → accountability: every lever becomes an OKR/KPI with an owner, a target, and a live score",
+        "Growth model: the quantified levers, targets, and roadmap — the plan for where the upside is",
+        "Analytics manager: modules for demand, business model & margin, resource & operations, conversion & pricing, cohort LTV, and team efficiency — each scored green / amber / red against target",
+        "Wired to real data that constantly says what's on track and what's slipping — so you hit the strategy, not just set it",
       ],
     },
     {
