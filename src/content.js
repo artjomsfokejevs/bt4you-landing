@@ -249,18 +249,8 @@ export const products = {
       name: "Compass",
       tagline: "Growth model + analytics manager",
       mock: "vantage",
-      shots: [
-        {
-          src: "/brand/screenshots/compass.webp",
-          label: "compass · growth model — the plan",
-          caption: "Real dashboard · company hidden, some figures adjusted",
-        },
-        {
-          src: "/brand/screenshots/analytics-manager.webp",
-          label: "compass · analytics manager — is the model working?",
-          caption: "Real dashboard · company hidden, some figures adjusted",
-        },
-      ],
+      showcase: "/brand/screenshots/compass-showcase.webp",
+      showcaseCaption: "Real dashboards · company hidden, some figures adjusted",
       body: "Compass turns strategy into numbers, numbers into processes, and processes into accountability — a live OKR/KPI system wired to your real data. First it builds your growth model: the levers, the targets, the roadmap. Then a stack of analytics modules reads the real numbers and tells you, continuously, what's working and what isn't — so the strategy actually gets executed, not just written.",
       points: [
         "Strategy → numbers → processes → accountability: every lever becomes an OKR/KPI with an owner, a target, and a live score",

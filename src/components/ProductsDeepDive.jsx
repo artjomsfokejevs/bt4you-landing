@@ -165,7 +165,21 @@ export default function ProductsDeepDive() {
                 </ul>
               </div>
               <div className={flip ? "lg:order-1" : ""}>
-                {item.shots ? (
+                {item.showcase ? (
+                  <figure>
+                    <img
+                      src={item.showcase}
+                      alt={`${item.name} — product`}
+                      className="w-full rounded-2xl shadow-lift ring-1 ring-black/5"
+                      loading="lazy"
+                    />
+                    {item.showcaseCaption && (
+                      <figcaption className="mt-3 text-center font-mono text-[10px] uppercase tracking-[0.14em] text-muted-lt">
+                        {item.showcaseCaption}
+                      </figcaption>
+                    )}
+                  </figure>
+                ) : item.shots ? (
                   <div className="space-y-5">
                     {item.shots.map((s) => (
                       <Frame key={s.src} label={s.label}>
