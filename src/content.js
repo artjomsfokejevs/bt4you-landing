@@ -35,7 +35,7 @@ export const hero = {
 export const heroStats = [
   { value: "1", label: "Source of truth for the entire executive layer." },
   { value: "24/7", label: "Visibility — see how every decision impacts your core goals." },
-  { value: "5", label: "Integrated modules — everything to run and scale the business in one ecosystem." },
+  { value: "5", label: "Integrated systems — everything to run and scale the business in one ecosystem." },
 ]
 
 // — Trust strip (social proof) —
@@ -90,7 +90,7 @@ export const control = {
   title: "Everything that moves the company — on the record.",
   body: "Once the product, architecture, and business model exist, BT4YOU keeps it all in motion: every euro, every conversation, every commitment, and the speed at which decisions turn into delivery. From said to shipped, nothing falls through.",
   items: [
-    { tag: "FINANCE", v: "v-warning", title: "The money, in real time", body: "Keel, your digital CFO, watches the economics and live product analytics — so you always know whether the model is actually making money." },
+    { tag: "FINANCE", v: "v-warning", title: "The money, in real time", body: "Keel, your digital CFO, watches the economics in real time — so you always know whether the model is actually making money." },
     { tag: "MEETINGS", v: "v-violet", title: "Meeting intelligence", body: "Every meeting analysed for what it changed: decisions made, progress moved, risks surfaced — the dynamics of results, not the minutes." },
     { tag: "DECISIONS", v: "v-brand", title: "Decision velocity", body: "How fast decisions get made — and then executed — measured, so a big roadmap turns into shipped work, on time." },
     { tag: "AGREEMENTS", v: "v-info", title: "The commitment ledger", body: "Who promised what, to whom, by when — every commitment recorded and tracked, never lost in the thread." },
@@ -130,7 +130,7 @@ export const systems = {
       name: "Compass",
       tag: "GROWTH MODEL",
       v: "v-info",
-      body: "Your growth model, measured live. Compass builds the model of where your upside is — the levers, the targets, the roadmap — then a stack of analytics modules scores, in hard numbers, whether the model is actually working. Running on Alps2Alps operations.",
+      body: "Your growth model, measured live. Compass builds the model of where your upside is — the levers, the targets, the roadmap — then a stack of analytics modules scores, in hard numbers, whether the model is actually working.",
       highlight: "The growth model — and whether it's working",
     },
     {
