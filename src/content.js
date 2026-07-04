@@ -103,7 +103,7 @@ export const control = {
 export const systems = {
   eyebrow: "THE ECOSYSTEM",
   title: "A digital C-suite, running the business.",
-  body: "It isn't one bot — it's a whole executive team in software. Keel runs the money. Sonar runs every customer conversation. Compass reads performance in hard numbers. Forge builds and maintains the entire stack. And BT4YOU sits at the centre — the chief of staff that turns all of it into decisions.",
+  body: "It isn't one bot — it's a whole executive team in software. Keel runs the money. Sonar runs every customer conversation. Compass runs your growth model and scores whether it's working. Forge builds and maintains the entire stack. And BT4YOU sits at the centre — the chief of staff that turns all of it into decisions.",
   items: [
     {
       name: "BT4YOU Executive Bot",
@@ -128,10 +128,10 @@ export const systems = {
     },
     {
       name: "Compass",
-      tag: "BUSINESS CONTROL",
+      tag: "GROWTH MODEL",
       v: "v-info",
-      body: "Your digital analyst. It reads the performance of the team and the product, spots the patterns no human could hold in their head, and tells you — in hard numbers — whether you're still on the growth curve. Running on Alps2Alps operations.",
-      highlight: "Always knows if you're still on the curve",
+      body: "Your growth model, measured live. Compass builds the model of where your upside is — the levers, the targets, the roadmap — then a stack of analytics modules scores, in hard numbers, whether the model is actually working. Running on Alps2Alps operations.",
+      highlight: "The growth model — and whether it's working",
     },
     {
       name: "Forge",
@@ -247,16 +247,26 @@ export const products = {
     },
     {
       name: "Compass",
-      tagline: "Digital business controller",
+      tagline: "Growth model + analytics manager",
       mock: "vantage",
-      shot: "/brand/screenshots/compass.webp",
-      shotLabel: "compass · strategy 26/27 — analytics-driven growth points",
-      body: "Continuously reads team and product performance and tells you whether you’re still on the growth curve — and where the next margin is hiding. Below: a real Compass output (company anonymized).",
+      shots: [
+        {
+          src: "/brand/screenshots/growth-model.webp",
+          label: "compass · growth model — the plan",
+          caption: "Generic preview · illustrative data",
+        },
+        {
+          src: "/brand/screenshots/analytics-manager.webp",
+          label: "compass · analytics manager — is the model working?",
+          caption: "Generic preview · illustrative data",
+        },
+      ],
+      body: "Compass works at the strategy level. First it builds your growth model — where the upside is, the levers that capture it, and the roadmap to realise them. Then a stack of analytics modules scores, live and in hard numbers, whether that model is actually working. The plan on top; the telemetry underneath.",
       points: [
-        "KPI strip: season revenue, gross margin %, and operational savings — at a glance",
-        "Gross-margin % per product line straight from the data warehouse",
-        "A live autoplanner validated across many real days of dispatch — cuts empty kilometres, saves per day",
-        "LTV-by-cohort + RFM segments — surfacing seven-figure seasonal growth levers",
+        "Growth model: your quantified levers — each with a € number, an owner, and a capture path — plus the roadmap and target upside",
+        "Analytics manager: modules for demand, business model & margin, resource & operations, conversion & pricing, cohort LTV, and team efficiency",
+        "Every module scores execution against the model's target — green ≥95%, amber 70–94%, red below — so a slipping lever shows the day it slips",
+        "Built on your own data, in any industry — the model is the product, not any one vertical view",
       ],
     },
     {
