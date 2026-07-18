@@ -48,7 +48,7 @@ export default function About() {
 
           {/* narrative */}
           <div>
-            <h2 className="display text-3xl font-medium leading-tight text-deep-blue sm:text-[2.4rem]">
+            <h2 className="display text-3xl font-medium leading-tight text-deep-blue sm:text-[2.6rem]">
               A solution to every problem looks like a{" "}
               <span className="text-gradient">digital matrix of accountability</span>.
             </h2>

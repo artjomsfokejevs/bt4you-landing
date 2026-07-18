@@ -1,6 +1,23 @@
 import { Logo } from "./Icons"
 import { brand, footer } from "../content"
 
+// 2026-07-10 — footer links were all href="#" (jumped to top). Map each
+// label to its real in-page anchor so the footer actually navigates.
+const LINK_HREF = {
+  "Philosophy": "#thesis",
+  "Process": "#model",
+  "Total control": "#control",
+  "Ecosystem": "#systems",
+  "BT4YOU Executive Bot": "#products",
+  "Keel": "#products",
+  "Sonar": "#products",
+  "Compass": "#products",
+  "Forge": "#products",
+  "About the founder": "#about",
+  "Contact": "#cta",
+  "Request access": "#cta",
+}
+
 export default function Footer() {
   return (
     <footer className="bg-ink text-white">
@@ -22,7 +39,7 @@ export default function Footer() {
               <ul className="mt-4 space-y-3">
                 {col.links.map((l) => (
                   <li key={l}>
-                    <a href="#" className="text-sm text-white/65 transition hover:text-white">{l}</a>
+                    <a href={LINK_HREF[l] || "#top"} className="text-sm text-white/65 transition hover:text-white">{l}</a>
                   </li>
                 ))}
               </ul>

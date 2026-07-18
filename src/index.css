@@ -10,6 +10,12 @@
   /* — PRIMARY scale (exact brand-book hex) — */
   --color-deep-blue: #1e3a8a;
   --color-indigo: #4f46e5;
+  /* 2026-07-10 — the LOGO blue (public/brand/logo.svg) is the true brand
+     mark colour; make it a first-class token so the accent on the page
+     matches the logo instead of drifting to indigo/sky. --color-brand is
+     used for eyebrows/accents on light bg; --color-brand-2 (lighter) on dark. */
+  --color-brand: #1a73e8;
+  --color-brand-2: #3b9dff;
   --color-brand-dk: #0369a1;
   --color-brand-lt: #0ea5e9;
   --color-ink: #0f172a;
@@ -100,7 +106,7 @@
 
   /* — Eyebrow / mono label — */
   .eyebrow {
-    @apply inline-flex items-center gap-2 font-mono text-[11px] font-medium uppercase tracking-[0.18em] text-indigo;
+    @apply inline-flex items-center gap-2 font-mono text-[11px] font-medium uppercase tracking-[0.18em] text-brand;
   }
 
   /* — Pills / tags — */
@@ -192,7 +198,7 @@
 
   /* — Input (brand-book states) — */
   .input {
-    @apply w-full rounded-xl bg-white px-4 py-3 text-sm text-ink placeholder-muted-lt outline-none;
+    @apply w-full rounded-xl bg-white px-4 py-3 text-sm text-ink placeholder-muted outline-none;
     border: 1px solid var(--color-border-lt);
     transition: box-shadow .2s ease, border-color .2s ease;
   }

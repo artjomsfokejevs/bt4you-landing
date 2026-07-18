@@ -190,7 +190,7 @@ export const control_room = {
   criticality: [
     { key: "P1 ≥80", n: 6, color: "#dc2626" },
     { key: "P2 70-79", n: 11, color: "#f59e0b" },
-    { key: "P3 60-69", n: 14, color: "#eab308" },
+    { key: "P3 60-69", n: 14, color: "#f59e0b" },
     { key: "P4 50-59", n: 9, color: "#0ea5e9" },
     { key: "P5 <50", n: 5, color: "#94a3b8" },
   ],

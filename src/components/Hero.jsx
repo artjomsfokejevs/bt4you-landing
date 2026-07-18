@@ -14,7 +14,7 @@ export default function Hero() {
           alt="BT4YOU"
           className="animate-rise mb-6 h-20 w-20 drop-shadow-[0_8px_30px_rgba(77,159,255,0.45)] sm:h-24 sm:w-24"
         />
-        <span className="eyebrow animate-rise delay-1 !text-brand-lt">{hero.badge}</span>
+        <span className="eyebrow animate-rise delay-1 !text-brand-2">{hero.badge}</span>
 
         <h1 className="display animate-rise delay-1 mt-6 max-w-4xl text-[2.6rem] font-medium leading-[1.05] text-white sm:text-6xl">
           {hero.title[0]}<br />

@@ -4,7 +4,9 @@ const tagColor = {
   "EXECUTIVE OS": "bg-indigo/15 text-indigo",
   "DIGITAL CFO": "bg-warning/15 text-warning-dk",
   COMMUNICATION: "bg-success/15 text-success",
-  "BUSINESS CONTROL": "bg-info/15 text-brand-dk",
+  // 2026-07-10 — Compass's tag is "GROWTH MODEL" (content.js); the old
+  // "BUSINESS CONTROL" key matched nothing, so Compass fell to the default.
+  "GROWTH MODEL": "bg-info/15 text-brand-dk",
   "THE FACTORY": "bg-violet/15 text-violet-dk",
 }
 
@@ -15,7 +17,7 @@ export default function Systems() {
       <div className="pointer-events-none absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 rounded-full bg-indigo/20 blur-3xl" />
       <div className="relative mx-auto max-w-6xl px-6 py-24">
         <div className="max-w-2xl">
-          <span className="eyebrow !text-brand-lt">{s.eyebrow}</span>
+          <span className="eyebrow !text-brand-2">{s.eyebrow}</span>
           <h2 className="display mt-4 text-3xl font-medium leading-tight text-white sm:text-[2.6rem]">{s.title}</h2>
           <p className="mt-5 text-lg leading-relaxed text-white/60">{s.body}</p>
         </div>
@@ -37,7 +39,7 @@ export default function Systems() {
                 <span className={`tag mb-4 ${i === 0 ? "bg-white/20 text-white" : tagColor[item.tag] || "bg-white/10 text-white"}`}>
                   {item.tag}
                 </span>
-                <h3 className={`font-bold ${i === 0 ? "text-2xl text-white" : "text-lg text-white"}`}>{item.name}</h3>
+                <h3 className={`display font-semibold ${i === 0 ? "text-2xl text-white" : "text-lg text-white"}`}>{item.name}</h3>
                 <p className={`mt-3 leading-relaxed ${i === 0 ? "text-[15px] text-white/85" : "text-sm text-white/55"}`}>{item.body}</p>
               </div>
               <div className={`relative mt-6 flex items-center gap-2 text-sm font-semibold ${i === 0 ? "text-white" : "text-brand-lt"}`}>

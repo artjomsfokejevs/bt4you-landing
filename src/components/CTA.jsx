@@ -53,7 +53,7 @@ export default function CTA() {
   }
 
   return (
-    <section id="cta" className="mx-auto max-w-6xl px-6 py-20">
+    <section id="cta" className="mx-auto max-w-6xl px-6 py-24">
       <div className="gradient-hero relative overflow-hidden rounded-3xl px-8 py-16 text-center shadow-lift sm:px-16">
         <div className="pointer-events-none absolute -left-16 -top-16 h-64 w-64 rounded-full bg-indigo/30 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-20 -right-10 h-72 w-72 rounded-full bg-violet/25 blur-3xl" />
@@ -69,7 +69,7 @@ export default function CTA() {
         )}
 
         <div className="relative">
-          <span className="eyebrow !text-brand-lt justify-center">{cta.badge}</span>
+          <span className="eyebrow !text-brand-2 justify-center">{cta.badge}</span>
           <h2 className="display mx-auto mt-4 max-w-2xl text-3xl font-medium leading-tight text-white sm:text-[2.6rem]">
             {cta.title}
           </h2>
@@ -174,7 +174,7 @@ export default function CTA() {
                 <button
                   type="submit"
                   disabled={status === "sending"}
-                  className="btn-secondary justify-center whitespace-nowrap disabled:opacity-60"
+                  className="btn-primary justify-center whitespace-nowrap disabled:opacity-60"
                 >
                   {status === "sending" ? "Sending…" : cta.primary} <Arrow className="h-4 w-4" />
                 </button>

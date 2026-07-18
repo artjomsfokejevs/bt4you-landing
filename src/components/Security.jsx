@@ -17,7 +17,7 @@ export default function Security() {
       <div className="pointer-events-none absolute right-1/3 top-0 h-72 w-72 rounded-full bg-brand-dk/20 blur-3xl" />
       <div className="relative mx-auto max-w-6xl px-6 py-24">
         <div className="max-w-2xl">
-          <span className="eyebrow !text-brand-lt">{s.eyebrow}</span>
+          <span className="eyebrow !text-brand-2">{s.eyebrow}</span>
           <h2 className="display mt-4 text-3xl font-medium leading-tight text-white sm:text-[2.6rem]">{s.title}</h2>
           <p className="mt-5 text-lg leading-relaxed text-white/60">{s.body}</p>
         </div>

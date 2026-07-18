@@ -158,7 +158,7 @@ export default function ControlRoom() {
           </div>
         )}
 
-        <p className="mt-5 text-center font-mono text-[11px] uppercase tracking-[0.14em] text-muted-lt">
+        <p className="mt-5 text-center font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
           Recreated from the live BT4YOU Executive Bot · Product Management view
         </p>
       </div>

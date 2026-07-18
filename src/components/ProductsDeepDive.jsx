@@ -89,7 +89,7 @@ const CallQa = () => (
 )
 
 const Vantage = () => (
-  <Frame label="compass · business control">
+  <Frame label="compass · growth model">
     <div className="grid grid-cols-2 gap-px overflow-hidden rounded-lg bg-white/10">
       {[["€25M", "Season revenue", "text-success-med"], ["36%", "Gross margin", "text-brand-lt"], ["−24%", "Driver consol.", "text-warning"], ["€3M", "Growth levers", "text-violet"]].map(([v, l, c]) => (
         <div key={l} className="bg-ink/60 px-3 py-2.5">
@@ -127,7 +127,7 @@ const Builder = () => (
       <div className="text-[10px] text-white/70">Gate: /review · 66 checks</div>
       <div className="mt-1 font-mono text-[9px] text-success-med">✓ 0 critical · 1 warning · ship-ready</div>
       <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-white/10">
-        <div className="h-full w-[72%] rounded-full" style={{ background: "linear-gradient(90deg,#4f46e5,#8b5cf6)" }} />
+        <div className="h-full w-[72%] rounded-full" style={{ background: "var(--gradient-stripe)" }} />
       </div>
       <div className="mt-1 font-mono text-[9px] text-white/40">100+ production patterns encoded</div>
     </div>
@@ -174,7 +174,7 @@ export default function ProductsDeepDive() {
                       loading="lazy"
                     />
                     {item.showcaseCaption && (
-                      <figcaption className="mt-3 text-center font-mono text-[10px] uppercase tracking-[0.14em] text-muted-lt">
+                      <figcaption className="mt-3 text-center font-mono text-[10px] uppercase tracking-[0.14em] text-muted">
                         {item.showcaseCaption}
                       </figcaption>
                     )}
